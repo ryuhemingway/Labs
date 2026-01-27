@@ -139,7 +139,7 @@ Work each one out on paper - similar to how you did for the 5 value array above 
 
 ## Technical Interview Practice
 
-Lastly, work on leet code practice. Everyone pick a different problem, and take turns explaining your solution *as* you work through the code (as time allows). This is called "live coding" and often required in technical interviews. Moving forward, we would like you to emphasize the explaining of code as you work through it, to better prepare you for technical interviews. You should also discuss one of the technical interview questions as a group. 
+Lastly, work on leet code practice. Everyone pick a different problem, and take turns explaining your solution *as* you work through the code (as time allows). This is called "live coding" and often required in technical interviews. Moving forward, we would like you to emphasize the explaining of code as you work through it, to better prepare you for technical interviews. You should also discuss one of the technical interview questions as a group.  Additionally, post at least one coding challenge problem you worked on each week to the group chat  or group files. This can be done asynchronously, and can be the same problem you submit with your homework.
 
 
 ## 📚 Resources

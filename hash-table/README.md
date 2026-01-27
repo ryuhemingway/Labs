@@ -150,7 +150,7 @@ For object oriented languages such as Java, those are built into the objects the
 > Can you also generate a case where access/insert/delete are $O(n)$?
 
 ## Leet Code Practice
-Take time practicing some of the past modules leet code. While you may not have time for everyone to do this, have a couple people practice "live coding". Live coding is a skill in interviews were you are asked to describe code **while** you are writing it. It can be a challenging skill, and it takes practice. I recommend that you setup a rotation of people to practice this skill within your team, ideally a couple every week. The other teams members can offer support, and then do a code review after a solution is generated. Discuss pros/cons of the leet code solution as well as other potential ways to solve the problem.
+Take time practicing some of the past modules leet code. While you may not have time for everyone to do this, have a couple people practice "live coding". Live coding is a skill in interviews were you are asked to describe code **while** you are writing it. It can be a challenging skill, and it takes practice. I recommend that you setup a rotation of people to practice this skill within your team, ideally a couple every week. The other teams members can offer support, and then do a code review after a solution is generated. Discuss pros/cons of the leet code solution as well as other potential ways to solve the problem. Additionally, post at least one coding challenge problem you worked on each week to the group chat  or group files. This can be done asynchronously, and can be the same problem you submit with your homework.
 
 ## 📚 Resources
 * [Left/Right Shift Operators in C](https://www.geeksforgeeks.org/left-shift-right-shift-operators-c-cpp/)
