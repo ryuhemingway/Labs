@@ -1,29 +1,21 @@
-	.text
-	.file	"simple.c"
-	.globl	main                            # -- Begin function main
-	.p2align	4, 0x90
-	.type	main,@function
-main:                                   # @main
+	.build_version macos, 26, 0	sdk_version 26, 4
+	.section	__TEXT,__text,regular,pure_instructions
+	.globl	_main                           ; -- Begin function main
+	.p2align	2
+_main:                                  ; @main
 	.cfi_startproc
-# %bb.0:
-	pushq	%rbp
+; %bb.0:
+	sub	sp, sp, #16
 	.cfi_def_cfa_offset 16
-	.cfi_offset %rbp, -16
-	movq	%rsp, %rbp
-	.cfi_def_cfa_register %rbp
-	movl	$0, -4(%rbp)
-	movl	$10, -8(%rbp)
-	movl	-8(%rbp), %eax
-	addl	$5, %eax
-	movl	%eax, -8(%rbp)
-	xorl	%eax, %eax
-	popq	%rbp
-	.cfi_def_cfa %rsp, 8
-	retq
-.Lfunc_end0:
-	.size	main, .Lfunc_end0-main
+	mov	w0, #0                          ; =0x0
+	str	wzr, [sp, #12]
+	mov	w8, #10                         ; =0xa
+	str	w8, [sp, #8]
+	ldr	w8, [sp, #8]
+	add	w8, w8, #5
+	str	w8, [sp, #8]
+	add	sp, sp, #16
+	ret
 	.cfi_endproc
-                                        # -- End function
-	.ident	"Ubuntu clang version 14.0.0-1ubuntu1"
-	.section	".note.GNU-stack","",@progbits
-	.addrsig
+                                        ; -- End function
+.subsections_via_symbols

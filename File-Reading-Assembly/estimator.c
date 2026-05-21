@@ -78,7 +78,27 @@ void print_info(int* counts) {
  * Finally, we print the info for each instruction using print_info.
 */
 void run_program(char* file_name) {
-     // student TODO
+     // lets open the file
+        FILE* fp = fopen(file_name, "r");
+    if (fp == NULL) {
+        printf("Error opening file: %s\n", file_name);
+        exit(1);
+    }
+ 
+    int counts[11] = {0};
+    char line[BUFF_SIZE];
+ 
+    while (fgets(line, BUFF_SIZE, fp) != NULL) {
+        convertToUpperCase(line);
+        for (int i = 0; i < 11; i++) {
+            if (contains(line, instructions[i])) {
+                counts[i]++;
+            }
+        }
+    }
+ 
+    fclose(fp);
+    print_info(counts);
 
 }
 
@@ -97,3 +117,15 @@ int main(int argc, char *argv[])
 
     return 0;
 }
+
+### Discussion
+* What were some challenges?
+It was challenging to understand how to begin writing our run_program code because the provided code was at first diffucult to comprehend.
+* What do the cycles tell you about the difficulty of the process for the computer?
+The more cycles added, the more diffucult it is for the CPU to complete the programs instructions. 
+* Why does this/knowing assembly matter?
+If you have a long code where you have a loop of over 100k iterations and you have to preform an operation on it each time, replacing that operation with shift will decrease the total workload needed.
+  * This right here is the hard one. It can be difficult to see the forest through the trees, so discuss some reasons that come to mind and share them with the class at the end. 
+* If you have time, use the Godbolt tool (linked below) to try equivalent programs in various languages. 
+  * How does python and c differ, even if it the code is "equivalent"?
+  C is substantially more literal and needs to be told that space is occupied or freed. Python takes alot of the diffucultly away from understanding how the computer handles the code so that it is more beginner friendly.

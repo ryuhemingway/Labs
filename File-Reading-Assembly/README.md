@@ -133,11 +133,11 @@ That is the letter O, not the number 0. This will compile the code with the high
 
 ### Discussion
 * How did the total cycle costs of the program change? When setting up this team activity, it was a substantial difference! 
-
+The total cycle cost decrased substantially after compiling wuth -03. The unoptimized assembly had more instructions and was more diffucult for the computer to compile and follow.
 
 ## Technical Interview Practice
 
-As per our standard end of the team activity - go to the Module 02 challenge problems, and as a group pick a couple to work on. Discuss your solutions. Include a solution in your team activity meeting files. You are also encouraged to take a technical interview question and discuss solutions as a group.    Additionally, post at least one coding challenge problem you worked on each week to the group chat  or group files. This can be done asynchronously, and can be the same problem you submit with your homework.
+As per our standard end of the team activity - go to the Module 02 challenge problems, and as a group pick a couple to work on. Discuss your solutions. Include a solution in your team activity meeting files. You are also encouraged to take a technical interview question and discuss solutions as a group. Additionally, post at least one coding challenge problem you worked on each week to the group chat  or group files. This can be done asynchronously, and can be the same problem you submit with your homework.
 
 
 ## 📚 Resources
