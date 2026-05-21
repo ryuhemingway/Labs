@@ -36,8 +36,9 @@ int main(int argc, char** argv){
 
 ### Discussion
 * What is the first argument passed into the program?
+The first arguement is arg_practice.c - the name of the file
 * Why would having program arguments be useful for programs?
-
+If we have program arguements then we dont have to recompile the program everytime.
 
 ## Reading a File
 If you followed Mike Shaw's video, you will have a good idea of how to read a file. This follows a similar guideline. 
