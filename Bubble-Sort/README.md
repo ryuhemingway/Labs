@@ -129,8 +129,18 @@ We suggest you run it *without* print, as print will slow down the code. So for 
 > ./tester.out 0 10000
 > ./tester.out 1 10000
 ```
+| N | Bubble | Quick |
+| :-- | :--: | :--: |
+| 1 | 0.000000 | 0.000000 |
+| 10 | 0.000001 | 0.000001 |
+| 100 | 0.000027 | 0.000004 |
+| 1000 | 0.001898 | 0.000064 |
+| 10000 | 0.216050 | 0.000793 |
 
 You will notice on larger numbers, the bubble starts to really slow down, while the qsort (quick sort) doesn't.  Have one member store the runs of the output into a spreadsheet, and then graph the results between the two sorts. 
+
+https://docs.google.com/spreadsheets/d/1lsMc1_dyJs9YBW7KvIZJmxcMGXcRJJ2le9t4e0AByjw/edit?usp=sharing
+
 
 ## Homework Prep
 With your group, talk about the differences between Insertion, Bubble, and Selection sorts. Try to work them out on paper first!

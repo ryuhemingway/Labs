@@ -18,20 +18,20 @@
 // Output:   No value is returned, but 'array' should
 //           be modified to store a sorted array of size.
 void bubbleSortIntegers(int *array, unsigned int size, int print)
-
 {
-    for (unsigned int i = 0; i < size - 1; i++)
-    {
-        for (unsigned int j = 0; j < size - i - 1; j++)
-        {
-            if (array[j] > array[j + 1])
-            {
+    for (unsigned int i = 0; i < size - 1; i++){
+        int swapped = 0;
+        for (unsigned int j = 0; j < size - i - 1; j++){
+            if (array[j] > array[j + 1]){
                 swap(&array[j], &array[j + 1]);
+                swapped = 1;
             }
         }
-        if (print)
-        {
+        if (print){
             printIntArray(array, size);
+        }
+        if (!swapped){
+            break;
         }
     }
 }
