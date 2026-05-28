@@ -31,6 +31,12 @@ For example:
 1 2 3 4 5
 ```
 
+First pass:
+2,1,3,4,5
+1,2,3,4,5
+Same
+
+
 For five values, you will have five rows even if the sort looks complete to humans, computers still need to check the values. 
 
 
@@ -45,7 +51,7 @@ You can also [visualize] the sort! (suggestion right click and open the visualiz
 ## Writing Code and Running It
 To get started, download the associated code:
 
-* [sort_helper.h](sort_helper.h)
+* [sort_helper.h]
 * [sorts.h](sorts.h)
 * [tester.c](tester.c) 
 
@@ -150,3 +156,4 @@ Lastly, work on leet code practice. Everyone pick a different problem, and take 
 
 [bubble]: https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif
 [visualize]: https://www.hackerearth.com/practice/algorithms/sorting/bubble-sort/visualize/
+[def]: sort_helper.h
